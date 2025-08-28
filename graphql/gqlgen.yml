@@ -1,9 +1,25 @@
-schema: schema.graphql
+schema:
+  - schema.graphql
+
 
 models:
-  Account:
-    model: github.com/TechnoDiktator/go-grpc-graphql-microservice/graphql.Account
+  Account: #map Account type from schema to a Go struct
+    model: github.com/TechnoDiktator/go-grpc-graphql-microservice
     fields:
       orders:
-        resolver: true
+        resolver: true  #this will create a resolver for orders field in Account type
 
+
+
+# exec:
+#   filename: generated.go
+#   package: main
+
+# model:
+#   filename: models_gen.go
+#   package: main
+
+# resolver:
+#   layout: follow-schema
+#   dir: .
+#   package: main
