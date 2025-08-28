@@ -32,8 +32,8 @@ type OrderedProduct{
 
 
 input PaginationInput{
-    skip: Int!
-    take: Int!
+    skip: Int
+    take: Int
 }
 
 input AccountInput{
