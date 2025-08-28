@@ -4,7 +4,7 @@ schema:
 
 models:
   Account: #map Account type from schema to a Go struct
-    model: github.com/TechnoDiktator/go-grpc-graphql-microservice
+    model: github.com/TechnoDiktator/go-grpc-graphql-microservice/graphql.Account
     fields:
       orders:
         resolver: true  #this will create a resolver for orders field in Account type
